@@ -1,46 +1,90 @@
-
 /* Se aplica a todos los elementos  */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     /* para ver el diseño de la web, útli para depurar*/
     background-color: red;
 }
+
+
 /* Contenedor principal
 ahora se aplica a todos los dispostivos, aunque corresponde al tamaño grande de la pantalla */
+
 .grid-container {
     display: grid;
-    grid-template-areas:
-        "barra1 barra2"
-        "main-content main-content"
-        "footer footer";
-    grid-template-rows: 10vh 1fr auto; /* Altura: encabezado, contenido flexible, pie */
-    grid-template-columns: 5fr 1fr;/*250px 1fr; /* Ancho: barra lateral fija, contenido flexible */
+    grid-template-areas: "barra1 barra2" "main-content main-content" "footer footer";
+    grid-template-rows: 10vh 1fr auto;
+    /* Altura: encabezado, contenido flexible, pie */
+    grid-template-columns: 5fr 1fr;
+    /*250px 1fr; /* Ancho: barra lateral fija, contenido flexible */
     min-height: 100vh;
     margin-left: 2vh;
-    margin-right: 2vh ;
+    margin-right: 2vh;
 }
 
+
 /* Estilo para las áreas */
+
+
+/*
 #barra1 {
-    grid-area: barra1;
+
     background-color: #4CAF50;
     color: white;
     text-align: left;
 }
+*/
+
+#barra1 {
+    grid-area: barra1;
+    display: grid;
+    grid-template-areas: "logo opciones";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 100%;
+    background-color: aqua;
+}
+
+.logo {
+    grid-area: logo;
+    background-color: #4c82af;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.areaNav1 {
+    grid-area: "opciones";
+    border-color: red;
+}
+
+.areaNav1 h1 {
+    grid-area: logo;
+    background-color: #4c82af;
+}
+
+.areaNav1 ul {
+    grid-area: opciones;
+    background-color: blueviolet;
+}
+
 #barra2 {
     grid-area: barra2;
     background-color: #f4f4f4;
-
 }
+
 .main-content {
     grid-area: main-content;
     background-color: #fff;
     padding: 20px;
 }
+
 .footer {
     grid-area: footer;
     background-color: #333;
