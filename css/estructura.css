@@ -92,3 +92,22 @@ ahora se aplica a todos los dispostivos, aunque corresponde al tamaño grande de
     text-align: center;
     padding: 10px;
 }
+    /*Jose Antonio*/
+    .foto{
+        width: 150;
+        height: 150;
+        border: 3px solid rgb(245, 3, 3);
+       text-align: left;
+       line-height: 10px;
+        
+    }
+    .foto1{
+        width: 11.8em;
+        height: 17.55em;
+        border: 3px solid rgb(245, 3, 3);
+       text-align: left;
+       line-height: 10px;
+
+    }
+    
+
