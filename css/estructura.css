@@ -118,6 +118,88 @@ a {
 }
 
 
+.footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+    /*Jose Antonio*/
+    .foto{
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+        margin: 10px;
+        border: 3px solid rgb(245, 3, 3);
+       text-align: center;
+       line-height: 10px;
+       text-align: center
+       
+      
+    }
+    .producto {
+        width: 225px; /* Ajusta según tu necesidad */
+        text-align: center;
+        border: 1px solid #06b14d;
+        padding: 1px;
+        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+        background-color: #111111;
+    }
+    
+    .producto img {
+        width: 90%;
+    }
+    
+    .info {
+        margin-top: 0px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .like-btn, .estrella {
+        background: #f0f0f0;
+        border: none;
+        padding: 5px 5px;
+        margin: 1Spx;
+        border-radius: 5px;
+        align-items: left;
+    }
+    s
+    .like-btn:hover {
+        background: #4CAF50;
+        color: white;
+    }
+    
+    .estrella:hover {
+        background: #f8fc0f;
+        color: rgb(10, 10, 10);
+    }
+    .h4{
+        background-color: #f0f0f0;
+    }
+    
+    
+    .info-circle {
+        width: 30px;
+        height: 30px;
+        background-color: #007bff; 
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50%; /* Hace que sea un círculo */
+        cursor: pointer;
+        display: inline-block;
+    }
+    
+    .info-circle:hover {
+        background-color: #0056b3; 
+    }
+
+
+
 /* Links inside the dropdown */
 
 .dropdown-content a {
@@ -196,3 +278,4 @@ a {
         list-style-type: none;
     }
 }
+
