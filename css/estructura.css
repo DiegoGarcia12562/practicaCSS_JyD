@@ -135,7 +135,7 @@ a {
        text-align: center;
        line-height: 10px;
        
-       
+        
       
     }
     .producto {
@@ -145,14 +145,17 @@ a {
         padding: 1px;
         box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
         background-color: #111111;
+        display: inline-block;
+
     }
     
     .producto img {
         width: 90%;
+        display: flex;
     }
     
     .info {
-        margin-top: 0px;
+        margin-top: 5px;
         align-items: center;
         text-align: center;
     }
