@@ -134,7 +134,7 @@ a {
         border: 3px solid rgb(245, 3, 3);
        text-align: center;
        line-height: 10px;
-       text-align: center
+       
        
       
     }
@@ -200,7 +200,7 @@ a {
 
 
 
-/* Links inside the dropdown */
+
 
 .dropdown-content a {
     color: black;
@@ -210,21 +210,20 @@ a {
 }
 
 
-/* Change color of dropdown links on hover */
+/
 
 .dropdown-content a:hover {
     background-color: #f1f1f1
 }
 
 
-/* Show the dropdown menu on hover */
+
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
 
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
