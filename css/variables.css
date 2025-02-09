@@ -1,6 +1,8 @@
 :root {
     --colorInterface: #333;
+    --colorInterfaceRespaldo: #4e4e4e;
     --colorFondo: #666666;
     --colorRojo: #E50914;
-    --colorBlanco: #fff;
+    --colorRojoRespaldo: #a1050d;
+    --colorBlanco: #ffffff;
 }
