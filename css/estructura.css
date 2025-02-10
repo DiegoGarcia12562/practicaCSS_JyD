@@ -13,7 +13,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #333232;
+    background-color: var(--colorFondo);
     color: #ffffff;
 }
 
@@ -28,7 +28,7 @@ body {
     width: 100%;
     height: 100vh;
     margin: 0 auto;
-    background-color: var(--colorInterface);
+    background-color: var(--colorFondo);
 }
 
 #barra1 {
@@ -121,8 +121,16 @@ a {
     border-bottom: var(--colorRojo) 0.5vh solid;
 }
 
+.footer {
+    grid-area: footer;
+    background-color: var(--colorInterface);
+    color: var(--colorRojo);
+    text-align: center;
+    padding: 10px;
+}
 
-/* Estilos de boton desplegable*/
+
+/* ---Estilos de BOTON DESPLEGABLE--------------------------------------------------------------------------------------------*/
 
 .dropbtn {
     width: 100%;
@@ -151,126 +159,29 @@ a {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: var(--colorInterface);
     width: 100%;
     z-index: 1;
 }
 
-
-.footer {
-    grid-area: footer;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
+.dropdown:hover .dropbtn {
+    background-color: var(--colorRojo);
+    color: var(--colorBlanco);
 }
-    /*Jose Antonio*/
-    .foto{
-        width: 200px;
-        height: 300px;
-        object-fit: cover;
-        margin: 10px;
-        border: 3px solid rgb(245, 3, 3);
-       text-align: center;
-       line-height: 10px;
-       
-        
-      
-    }
-    .producto {
-        width: 225px; /* Ajusta según tu necesidad */
-        text-align: center;
-        border: 1px solid #06b14d;
-        padding: 1px;
-        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
-        background-color: #111111;
-        display: inline-block;
-
-    }
-    
-    .producto img {
-        width: 90%;
-        display: flex;
-    }
-    
-    .info {
-        margin-top: 5px;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .like-btn, .estrella {
-        background: #f0f0f0;
-        border: none;
-        padding: 5px 5px;
-        margin: 1Spx;
-        border-radius: 5px;
-        align-items: left;
-    }
-    s
-    .like-btn:hover {
-        background: #4CAF50;
-        color: white;
-    }
-    
-    .estrella:hover {
-        background: #f8fc0f;
-        color: rgb(10, 10, 10);
-    }
-    .h4{
-        background-color: #f0f0f0;
-    }
-    
-    
-    .info-circle {
-        width: 30px;
-        height: 30px;
-        background-color: #007bff; 
-        color: white;
-        font-size: 18px;
-        font-weight: bold;
-        text-align: center;
-        line-height: 30px;
-        border-radius: 50%; /* Hace que sea un círculo */
-        cursor: pointer;
-        display: inline-block;
-    }
-    
-    .info-circle:hover {
-        background-color: #0056b3; 
-    }
-
-
-
-
 
 .dropdown-content a {
-    color: black;
     padding-top: 1em;
     padding-bottom: 1em;
     text-decoration: none;
     display: block;
 }
 
-
-/
-
 .dropdown-content a:hover {
-    background-color: #f1f1f1
+    background-color: var(--colorRojoRespaldo);
 }
-
-
-
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-
-
-.dropdown:hover .dropbtn {
-    background-color: var(--colorRojo);
-    color: var(--colorBlanco);
 }
 
 
@@ -300,10 +211,6 @@ form.example button {
     border-left: none;
     /* Prevent double borders */
     cursor: pointer;
-}
-
-form.example button:hover {
-    background: var(--colorRojoRespaldo);
 }
 
 
@@ -369,6 +276,10 @@ form.example button {
         grid-template-rows: 10% 80% auto;
         grid-template-areas: 'barra1 barra1' 'barra2 cuerpo' 'barra2 footer';
     }
+    #barra1,
+    #barra2 {
+        font-size: 2.3vw;
+    }
     #barra1 {
         grid-area: barra1;
         width: 100%;
@@ -398,7 +309,7 @@ form.example button {
     .grid-layout {
         grid-template-columns: 20% auto;
         grid-template-rows: 40% auto 10%;
-        grid-template-areas: ' barra1 cuerpo' 'barra2 cuerpo' 'barra2 footer';
+        grid-template-areas: 'barra1 cuerpo' 'barra2 cuerpo' 'barra2 footer';
     }
     #barra1,
     #barra2 {
@@ -425,9 +336,6 @@ form.example button {
         align-content: center;
         width: 100%;
         height: 10vh;
-    }
-    .botonBuscador {
-        /*display: none;*/
     }
     .example input[type=text] {
         font-size: 3vw;

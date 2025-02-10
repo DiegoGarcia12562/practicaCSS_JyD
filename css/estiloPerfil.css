@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    display: grid;
+    background-color: var(--colorFondo);
+    color: #ffffff;
+    grid-template-columns: auto;
+    grid-template-rows: 10% auto 10%;
+    grid-template-areas: 'header' 'main' 'footer';
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 8% auto 8%;
+    background-color: var(--colorInterface);
+    align-items: center;
+    width: 100%;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    background-color: var(--colorInterface);
+    color: var(--colorRojo);
+}
+
+
+/*---CABECERA-------------------------------------------------------------------------------------------------------------------*/
+
+header div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header div a {
+    width: 100%;
+    height: 100%;
+}
+
+header div a button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: var(--colorRojo);
+}
+
+header div a button i {
+    width: 100%;
+    height: 100%;
+    font-size: 3em;
+    text-align: center;
+    color: var(--colorBlanco);
+}
+
+header div a button:hover {
+    background-color: var(--colorRojoRespaldo);
+    font-size: 1em;
+}
+
+header h1 {
+    color: var(--colorBlanco);
+    font-size: 2em;
+    text-align: center;
+}
