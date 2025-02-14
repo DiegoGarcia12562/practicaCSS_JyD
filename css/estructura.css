@@ -49,7 +49,7 @@ body {
     background-color: var(--colorInterface);
 }
 
-#cuerpo {
+.main-content {
     grid-area: cuerpo;
     background-color: var(--colorFondo);
 }

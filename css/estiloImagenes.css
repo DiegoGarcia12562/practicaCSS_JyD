@@ -21,6 +21,13 @@
     display: inline-block;
 }
 
+.producto:hover {
+    background-color: #1a1a1a;
+    img {
+        filter: brightness(1.2);
+    }
+}
+
 .producto img {
     width: 90%;
     display: flex;
