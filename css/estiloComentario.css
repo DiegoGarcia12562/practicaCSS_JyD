@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*---CABECERA-----------------------------------------------------------*/
+
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+    animation: colorFondoCambia 10s infinite alternate;
+    align-items: center;
+    width: 100%;
+    height: 4em;
+    margin-bottom: 3em;
+}
+
+header{
+    background-color: var(--colorInterface);
+}
+
+header div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header div a {
+    width: 100%;
+    height: 100%;
+}
+
+header div a button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: var(--colorRojo);
+}
+
+header div a button i {
+    width: 100%;
+    height: 100%;
+    font-size: 3vw;
+    text-align: center;
+    color: var(--colorBlanco);
+}
+
+header div a button:hover {
+    background-color: var(--colorRojoRespaldo);
+    font-size: 1em;
+}
+
+header h1 {
+    color: var(--colorBlanco);
+    font-size: 3vw;
+    text-align: center;
+}
+/*---------------------------------------------------*/
+
+body{
+    background-color: var(--colorFondo);
+    text-align: center;
+}
+
+.Itemcarrusel {
+    border: 1px solid var(--colorNegro);
+    height: 68vh;
+    position: relative;
+}
+
+.TarjetaCarusel {
+    height: 100%;
+}
+
+.flechascarrusel {
+    background-color: rgb(90, 17, 206, 0.3);
+    height: 100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#contentItemcarrusel {
+    border: 5px solid var(--colorNegro);
+    height: 68vh;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    color: var(--colorRojo);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.comentarios {
+    counter-reset: contador;
+}
+
+.comentario {
+    counter-increment: contador;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid var(--colorBlanco);
+    border-radius: 5px;
+    background: var(--colorBlanco);
+}
+
+.comentario::before {
+    content: "Comentario #" counter(contador) ": ";
+    font-weight: bold;
+    color: #333;
+}
+
+h2 {
+    color: var(--colorRojo);
+}
+
+#footer {
+    grid-area: footer;
+    background-color: var(--colorInterface);
+    color: var(--colorBlanco);
+    text-align: center;
+    padding: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+footer a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--colorRojo);
+}
+
+footer a:hover {
+    transform: scale(1.05);
+    /* Efecto de hacer mas grandote el texto */
+    text-shadow: 2px 2px 5px var(--colorRojoRespaldo);
+}

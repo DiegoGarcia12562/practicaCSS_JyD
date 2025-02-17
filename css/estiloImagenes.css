@@ -1,5 +1,9 @@
 /*Jose Antonio*/
 
+*{
+    text-decoration: none;
+}
+
 .foto {
     width: 200px;
     height: 300px;
@@ -11,17 +15,28 @@
 }
 
 .producto {
+    align-items: center;
+    text-align: center;
+    width: 12vw;
+    height: 100%;
     /* Ajusta según tu necesidad */
     text-align: center;
-    border: 1px solid #0a0a0a;
+    border: 1px solid var(--colorNegro);
     padding: 1px;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #111111;
+    background-color: var(--colorNegro);
     display: inline-block;
 }
 
+.producto:hover {
+    background-color: #1a1a1a;
+    img {
+        filter: brightness(1.2);
+    }
+}
 .producto img {
     width: 90%;
+    height: 20vw;
     display: flex;
 }
 
@@ -29,11 +44,12 @@
     margin-top: 5px;
     align-items: center;
     text-align: center;
+    font-size: 1.2em;
 }
 
 .like-btn,
 .estrella {
-    background: #f0f0f0;
+    background: var(--colorBlanco);
     border: none;
     padding: 5px 5px;
     margin: 1Spx;
@@ -42,24 +58,23 @@
 }
 
 s .like-btn:hover {
-    background: #4CAF50;
-    color: white;
+    color: var(colorBlanco);
 }
 
 .estrella:hover {
     background: #f8fc0f;
-    color: rgb(10, 10, 10);
+    color: var(--colorRojo);
 }
 
 .h4 {
-    background-color: #f0f0f0;
+    background-color: var(--colorBlanco);
 }
 
 .info-circle {
     width: 30px;
     height: 30px;
-    background-color: #007bff;
-    color: white;
+    background-color: var(--colorRojo);
+    color: var(--colorBlanco);
     font-size: 18px;
     font-weight: bold;
     text-align: center;
@@ -71,5 +86,5 @@ s .like-btn:hover {
 }
 
 .info-circle:hover {
-    background-color: #0056b3;
+    background-color: var(--colorRojoRespaldo);
 }
