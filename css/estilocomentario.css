@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--colorFondo);
+    text-align: center;
+    align-items: center;
+}
+.h1{
+    text-align: center;
+}
+.Itemcarrusel{
+    border: 1px solid black;
+    height: 68vh;
+    position: relative;
+}
+.TarjetaCarusel{
+    background-color: aqua;
+    height: 100%;
+}
+.flechascarrusel{
+    background-color: rgb(90, 17, 206, 0.3);
+    height: 100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+#contentItemcarrusel{
+    border: 5px solid black;
+    height: 68vh;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+i{
+    color: rgb(153, 38, 38);
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.comentarios {
+    counter-reset: contador;
+}
+
+.comentario {
+    counter-increment: contador;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: var(--colorBlanco);
+}
+
+.comentario::before {
+    content: "Comentario #" counter(contador) ": ";
+    font-weight: bold;
+    color: #333;
+}
+h2{
+    color: aqua;
+}
