@@ -14,7 +14,8 @@
 body {
     font-family: Arial, sans-serif;
     background-color: var(--colorFondo);
-    color: #ffffff;
+    color: var(--colorBlanco);
+    height: 100%;
 }
 
 
@@ -49,7 +50,7 @@ body {
     background-color: var(--colorInterface);
 }
 
-#cuerpo {
+.main-content {
     grid-area: cuerpo;
     background-color: var(--colorFondo);
 }
@@ -261,6 +262,9 @@ form.example::after {
         grid-template-columns: auto;
         grid-template-rows: 7% 7% 80% auto;
         grid-template-areas: 'barra1' 'barra2' 'cuerpo' 'footer';
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
     }
     #barra1 {
         grid-area: barra1;
