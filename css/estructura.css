@@ -24,7 +24,7 @@ body {
 .grid-layout {
     display: grid;
     grid-template-columns: 65% auto;
-    grid-template-rows: 8% auto 8%;
+    grid-template-rows: 8% 60% auto;
     grid-template-areas: 'barra1 barra2' 'cuerpo cuerpo' 'footer footer';
     width: 100%;
     height: 100vh;
@@ -127,12 +127,28 @@ main {
     width: 100%;
 }
 
-.footer {
+
+/* ---Foother--------------------------------------------------------------------------------------------------------------------------*/
+
+#footer {
     grid-area: footer;
     background-color: var(--colorInterface);
-    color: var(--colorRojo);
+    color: var(--colorBlanco);
     text-align: center;
-    padding: 10px;
+    padding: auto;
+    padding-top: 1%;
+    padding-bottom: 6%;
+}
+
+footer a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--colorRojo);
+}
+
+footer a:hover {
+    transform: scale(1.05); /* Efecto de hacer mas grandote el texto */
+    text-shadow: 2px 2px 5px var(--colorRojoRespaldo);
 }
 
 
@@ -260,7 +276,7 @@ form.example::after {
 @media (max-width: 975px) {
     .grid-layout {
         grid-template-columns: auto;
-        grid-template-rows: 7% 7% 80% auto;
+        grid-template-rows: 7% 7% auto auto;
         grid-template-areas: 'barra1' 'barra2' 'cuerpo' 'footer';
         width: 100%;
         height: 100vh;
@@ -294,7 +310,7 @@ form.example::after {
 @media (max-width: 768px) {
     .grid-layout {
         grid-template-columns: 20% auto;
-        grid-template-rows: 10% 80% auto;
+        grid-template-rows: 10% auto auto;
         grid-template-areas: 'barra1 barra1' 'barra2 cuerpo' 'barra2 footer';
     }
     #barra1,
