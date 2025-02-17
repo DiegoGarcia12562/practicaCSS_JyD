@@ -1,0 +1,29 @@
+/*---Estilo img1------------------------------------------*/
+
+.producto:nth-child(1n) {
+    transition: transform 0.4s ease-in-out;
+}
+
+.producto:nth-child(1n):hover {
+    transform: scale(1.1);
+}
+
+/*---Estilo img2------------------------------------------*/
+
+.producto:nth-child(2n) {
+    transition: transform 0.4s ease-in-out;
+}
+
+.producto:nth-child(2n):hover {
+    transform: rotate(10deg);
+}
+
+/*---Estilo img3------------------------------------------*/
+
+.producto:nth-child(3n) {
+    transition: transform 0.4s ease-in-out;
+}
+
+.producto:nth-child(3n):hover {
+    transform: rotate(-10deg);
+}
